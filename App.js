@@ -21,7 +21,9 @@ const App= ()=>{
           name='TelaInicial' component={TelaInicial}
           options={{headerShown:false}}
         />
-        <Stack.Screen name='TelaDetalhes' component={TelaDetalhes}/>
+        <Stack.Screen name='TelaDetalhes' component={TelaDetalhes}
+        options={{headerShown:false}}
+        />
         <Stack.Screen name='TelaResultado' component={TelaResultado}
         options={{headerShown:false}}
         />
