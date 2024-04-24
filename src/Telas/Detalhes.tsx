@@ -1,5 +1,5 @@
 import React from "react";
-import {Text,View,ImageBackground, StyleSheet, Image} from 'react-native'
+import {Text,View,ImageBackground, StyleSheet, Image, Linking} from 'react-native'
 import {Ionicons} from 'react-native-vector-icons'
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -25,7 +25,9 @@ const TelaDetalhes = (props)=>{
                 style={{flex:1}}
                 />
                 <Text style={estilo.texto}>{data.title}</Text>
-                <Ionicons name='globe' color='white' size={40} />
+                <Ionicons name='globe' color='white' size={40} 
+                    onPress={()=>Linking.openURL(data.images.origianl.url)}
+                />
             </SafeAreaView>
 
         </ImageBackground>
